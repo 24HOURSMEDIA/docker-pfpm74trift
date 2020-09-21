@@ -1,4 +1,5 @@
-FROM alpine:20200917
+FROM alpine:20200626
+
 LABEL Maintainer="24hoursmedia <info@24hoursmedia>" \
       Description="PHP-FPM 7.4 container started by supervisord"
 
