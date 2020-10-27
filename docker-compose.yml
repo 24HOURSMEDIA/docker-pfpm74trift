@@ -8,6 +8,8 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
+      args:
+        PHP_IMAGE: 24hoursmedia/pfpm74trift:1.0.4
     volumes:
       - ./src:/var/www/html
     environment:
