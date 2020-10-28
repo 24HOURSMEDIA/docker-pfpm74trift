@@ -65,6 +65,8 @@ COPY config/fpm-pool.conf /etc/php7/php-fpm.d/www.conf
 
 # install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer
+# composer v2
+RUN composer self-update --2
 
 # Make sure files/folders needed by the processes are accessible when they run under the nobody user
 RUN chown -R nobody.nobody /run
